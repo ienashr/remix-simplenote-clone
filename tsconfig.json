@@ -1,0 +1,22 @@
+{
+  "include": ["remix.env.d.ts", "**/*.ts", "**/*.tsx", "app/components/auth.jsx", "app/components/util/modal.jsx", "app/components/navbar.jsx", "app/entry.client.jsx", "app/root.jsx", "app/entry.server.jsx", "app/routes/__app/notes/notes-list.jsx"],
+  "compilerOptions": {
+    "lib": ["DOM", "DOM.Iterable", "ES2019"],
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "jsx": "react-jsx",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "target": "ES2019",
+    "strict": true,
+    "allowJs": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["./app/*"]
+    },
+
+    // Remix takes care of building everything in `remix build`.
+    "noEmit": true
+  }
+}
